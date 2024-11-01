@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Itinerary Planner - World Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="plan.css" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>World Explorer</h1>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="plan.html">Plan Your Trip</a>
+            <a href="index.html">What's New</a>
+            
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Itinerary Management Section -->
+        <div class="itinerary-wrapper">
+            <h3>Your Travel Planning</h3>
+            <form id="itinerary-form">
+                <label for="user-name">Your Name</label>
+                <input type="text" id="user-name" placeholder="Enter Your Name" required />
+
+                <label for="user-phone">Your Phone Number</label>
+                <input type="tel" id="user-phone" placeholder="Enter Your Phone Number" required />
+
+                <label for="travel-date">Travel Date</label>
+                <input type="date" id="travel-date" required />
+
+                <label for="destination-name">Destination Country</label>
+                <input type="text" id="destination-name" placeholder="Enter Country" required />
+
+                <!-- Additional fields for city and landmarks -->
+                <label for="destination-city">City</label>
+                <input type="text" id="destination-city" placeholder="Enter City" required />
+
+                <label for="destination-landmarks">Landmarks</label>
+                <textarea id="destination-landmarks" placeholder="Enter Landmarks or Points of Interest"></textarea>
+
+                <label for="destination-notes">Notes</label>
+                <textarea id="destination-notes" placeholder="Add notes about this destination"></textarea>
+
+                <button type="submit">Add to Itinerary</button>
+            </form>
+
+            <!-- Display Itinerary Items -->
+            <ul id="itinerary-list"></ul>
+
+            <!-- CRUD Buttons -->
+            <div class="crud-buttons">
+                <button id="btnReadAll" class="btn">Read All Itineraries</button>
+                <button id="btnDeleteAll" class="btn">Delete All Itineraries</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 World Explorer. All rights reserved.</p>
+        <p>Explore the world, one destination at a time. Your adventure starts here!</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

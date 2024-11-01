@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    background-image: url("jeoun.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align the items horizontally */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    color: #ffffff;
+}
+
+header h1 {
+    font-size: 2rem; /* Larger font for better readability */
+    color: #00aaff; /* Softer color for a better contrast */
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Centered navigation options with larger, readable font */
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-size: 1.2rem; /* Slightly larger font */
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff; /* Highlighted color on hover */
+}
+
+/* Container for the itinerary form with a semi-transparent background */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for readability */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+/* Other styles for the form and buttons */
+h3 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+#itinerary-form label {
+    color: #dcdcdc;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#itinerary-form input,
+#itinerary-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+#itinerary-form input::placeholder,
+#itinerary-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#itinerary-form input:focus,
+#itinerary-form textarea:focus {
+    border-color: #00aaff;
+    outline: none;
+}
+
+#itinerary-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#itinerary-form button:hover {
+    background-color: #0088cc;
+}
+
+/* Itinerary list and CRUD button styles */
+#itinerary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.itinerary-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.itinerary-item button {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.itinerary-item button:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}

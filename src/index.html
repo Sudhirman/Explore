@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Guide App - World Explorer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header Section with Navigation -->
+    <header>
+      <h1>World Explorer</h1>
+      <nav>
+        <a href="homepage.html">Home</a>
+        <a href="plan.html">Plan Your Trip</a>
+        <a href="index.html">What's New</a>
+       
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="country-inp"
+          placeholder="Enter a country name here..."
+          list="country-list"
+        />
+        <datalist id="country-list"></datalist>
+        <button id="search-btn">Search</button>
+      </div>
+      <div id="result"></div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 World Explorer. All rights reserved.</p>
+      <p>Explore the world, one destination at a time. Your adventure starts here!</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

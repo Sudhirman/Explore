@@ -1,0 +1,111 @@
+/* General Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #4a90e2;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+header nav {
+  margin-top: 5px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #d1e0f7;
+}
+
+/* Container and Form Styling */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-wrapper input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.search-wrapper button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-wrapper button:hover {
+  background-color: #357ab8;
+}
+
+/* Result Box Styling */
+#result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #eef2f6;
+  border: 1px solid #d1dfe9;
+  border-radius: 5px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #4a90e2;
+  color: #fff;
+  margin-top: 20px;
+}
+/* Coat of Arms Image Styling */
+.coat-of-arms-img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Explorer - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+ 
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: url('ita.jpg') no-repeat center center fixed; /* Set background image */
+            background-size: cover; /* Cover the entire page */
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(173, 216, 230, 0.9); /* Soft blue background */
+        }
+        
+        header h1 {
+            margin: 0;
+            color: #007bff;
+        }
+
+        /* Main Content Section */
+        main {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Light background for main content */
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1400px; /* Increased max-width for a larger container */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+        }
+
+        /* Welcome Section Styles */
+        .welcome-section {
+            text-align: center;
+            padding: 20px;
+            border-bottom: 1px solid #ddd; /* Add a bottom border */
+        }
+
+        .welcome-section h2 {
+            font-size: 36px;
+            color: #007bff; /* Match the header color */
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+        }
+
+        .welcome-section p {
+            font-size: 18px;
+            color: #555; /* Slightly darker for contrast */
+            margin-top: 10px;
+        }
+
+        /* Country Options Section */
+        .country-section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .country-container {
+            display: flex;
+            justify-content: center; /* Center the country cards */
+            flex-wrap: wrap;
+        }
+
+        .country-card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10px;
+            width: 220px; /* Adjust width for better aesthetics */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            background: #fff; /* White background for the cards */
+        }
+
+        .country-card:hover {
+            transform: scale(1.05);
+        }
+
+        .country-card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .social-media a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+        #nav-dropdown {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    padding: 0.7rem 1.5rem; /* Larger padding for easy clicking */
+    border-radius: 8px; /* Rounded corners */
+    border: none;
+    background-color: #ffffff;
+    color: #4a90e2;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+#nav-dropdown:hover {
+    background-color: #357ab8;
+    color: #ffffff;
+    transform: scale(1.05); /* Slight scale up on hover */
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-left">
+            <select id="nav-dropdown">
+                <option value="" disabled selected>Navigate</option>
+                <option value="plan.html">Plan</option>
+                <option value="index.html">What's New</option>
+                
+            </select>
+        </div>
+        <h1>World Explorer</h1>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="welcome-section">
+            <h2>Welcome to World Explorer</h2>
+            <p>Discover new destinations, plan your journeys, and stay updated with the latest in travel!</p>
+        </div>
+
+        <!-- Country Options Section -->
+        <div class="country-section">
+            <h2>Explore Amazing Destinations</h2>
+            <div class="country-container">
+                <div class="country-card">
+                    <img src="paris.jpg" alt="Eiffel Tower">
+                    <h3>Eiffel Tower, Paris</h3>
+                    <p>The Eiffel Tower, located in Paris, France, is one of the most recognizable landmarks in the world. Completed in 1889 for the Exposition Universelle (World's Fair), it was designed by the engineer Gustave Eiffel. Standing at approximately 1,083 feet (330 meters), it was the tallest man-made structure in the world until the completion of the Chrysler Building in New York City in 1930.</p>
+                </div>
+                <div class="country-card">
+                    <img src="cina.jpg" alt="Great Wall of China">
+                    <h3>The Great Wall Of China</h3>
+                    <p>Originally built for defense against invasions and raids, the wall is made of various materials, including earth, wood, bricks, and stone, depending on the region and resources available. Its design includes watchtowers, signal towers, and troop barracks, allowing for communication and military movement.</p>
+                </div>
+                <div class="country-card">
+                    <img src="mex.jpg" alt="Mexico">
+                    <h3>Mexico</h3>
+                    <p>Mexico, officially known as the United Mexican States, is a vibrant country located in the southern part of North America. It is bordered by the United States to the north, the Pacific Ocean to the west and south, and the Gulf of Mexico to the east. With a rich history that dates back to ancient civilizations such as the Maya and Aztec, Mexico boasts a diverse cultural heritage that influences its art, music, food, and festivals.</p>
+                </div>
+                <div class="country-card">
+                    <img src="brunei.jpg" alt="Dubai">
+                    <h3>Dubai</h3>
+                    <p>Dubai is a dazzling city located in the United Arab Emirates (UAE), known for its modern architecture, luxury shopping, and vibrant nightlife. As one of the seven emirates, Dubai has transformed from a small fishing village into a global metropolis in just a few decades.</p>
+                </div>
+                <div class="country-card">
+                    <img src="maldiv.jpg" alt="Maldives">
+                    <h3>Maldives</h3>
+                    <p>Each island in the Maldives typically features luxurious resorts, many of which offer overwater bungalows that provide direct access to the sea and stunning views of the horizon. This makes the Maldives a popular destination for honeymooners and couples seeking a romantic getaway.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 World Explorer. All rights reserved.</p>
+            <p>Explore a world of adventure and knowledge with us. At World Explorer, we are dedicated to providing you with the best travel resources, tips, and destination guides to make your journey unforgettable. Whether you’re planning a weekend getaway or a long-term trip, we’ve got you covered!</p>
+            <p>Follow us on our social media platforms for the latest updates, travel inspiration, and special offers!</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com" target="_blank">Instagram</a> |
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigate to different sections based on dropdown selection
+        document.getElementById("nav-dropdown").addEventListener("change", function() {
+            const selectedPage = this.value;
+            if (selectedPage) {
+                window.location.href = selectedPage;
+            }
+        });
+    </script>
+
+</body>
+</html>
